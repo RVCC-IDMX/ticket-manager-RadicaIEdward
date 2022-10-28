@@ -1,5 +1,12 @@
 import chalk from 'chalk';
+import { EventEmitter } from 'node:events';
 
+class TicketManager extends EventEmitter {
+  constructor(supply) {
+    super();
+    this.supply = supply;
+  }
+}
 const { log } = console;
 
 // Basic colors
