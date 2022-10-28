@@ -1,0 +1,20 @@
+{
+  "name": "ticket-manager-radicaiedward",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RVCC-IDMX/ticket-manager-RadicaIEdward.git"
+  },
+  "keywords": [],
+  "author": "Eddie Galindez <G00175511@stu.raritanval.edu> (https://github.com/RadicaIEdward)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RVCC-IDMX/ticket-manager-RadicaIEdward/issues"
+  },
+  "homepage": "https://github.com/RVCC-IDMX/ticket-manager-RadicaIEdward#readme"
+}
