@@ -2,7 +2,7 @@
   "name": "ticket-manager-radicaiedward",
   "version": "1.0.0",
   "description": "",
-  "main": "ticket-manager.js",
+  "main": "index.js",
   "nodemonConfig": {
     "delay": 3000,
     "events": {
