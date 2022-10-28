@@ -15,6 +15,7 @@ class TicketManager extends EventEmitter {
   }
 }
 
+module.exports = TicketManager;
 // Basic colors
 // log(chalk.red('Hey this is red!'));
 // log(chalk.magenta('Hey this is magenta!'));
