@@ -2,8 +2,15 @@
   "name": "ticket-manager-radicaiedward",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "ticket-manager.js",
+  "nodemonConfig": {
+    "delay": 3000,
+    "events": {
+      "start": "cls || clear"
+    }
+  },
   "scripts": {
+    "watch": "nodemon",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -21,6 +28,7 @@
     "@eslint/create-config": "^0.4.0",
     "eslint": "^8.26.0",
     "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-plugin-import": "^2.26.0"
+    "eslint-plugin-import": "^2.26.0",
+    "nodemon": "^2.0.20"
   }
 }
