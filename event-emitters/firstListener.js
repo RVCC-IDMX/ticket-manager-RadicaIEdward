@@ -1,5 +1,5 @@
 import chalk from 'chalk';
-import { TicketManager } from './ticket-manager.js';
+import { TicketManager } from './ticketManager.js';
 
 const { log } = console;
 

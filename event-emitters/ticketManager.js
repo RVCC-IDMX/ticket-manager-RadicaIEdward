@@ -1,7 +1,4 @@
-import chalk from 'chalk';
 import { EventEmitter } from 'node:events';
-
-const { log } = console;
 
 class TicketManager extends EventEmitter {
   constructor(supply) {
