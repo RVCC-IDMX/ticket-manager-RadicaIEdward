@@ -12,3 +12,6 @@ ticketManager.on('buy', (email, price, timestamp) => {
 });
 
 ticketManager.buy('test@email.com', 10);
+ticketManager.buy('test@email.com', 10);
+ticketManager.buy('test@email.com', 10);
+ticketManager.buy('test@email.com', 10);
