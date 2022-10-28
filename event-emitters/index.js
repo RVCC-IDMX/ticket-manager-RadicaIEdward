@@ -1,6 +1,11 @@
+import chalk from 'chalk';
+
 import { TicketManager } from './ticketManager.js';
 import { EmailService } from './emailService.js';
 import { DatabaseService } from './databaseService.js';
+
+const { log } = console;
+const { error } = console;
 
 const ticketManager = new TicketManager(3);
 const emailService = new EmailService();
@@ -12,10 +17,8 @@ ticketManager.on('buy', (email, price, timestamp) => {
 });
 
 ticketManager.on('error', (error) => {
-  console.error(`Gracefully handling our error: ${error}`);
+  error(chalk.bgMagentaBright.underline(`Gracefully handling our error: ${error}`));
 });
 
-ticketManager.buy('test@email.com', 10);
-ticketManager.buy('test@email.com', 10);
-ticketManager.buy('test@email.com', 10);
-ticketManager.buy('test@email.com', 10);
+log(chalk.greenBright.bgGray(`We have ${ticketManager.listenerCount('buy')} listener(s) for the buy event`));
+log(chalk.cyan.bgGrey(`We have ${ticketManager.listenerCount('error')} listener(s) for the error event`));
