@@ -2,6 +2,7 @@ import chalk from 'chalk';
 import { TicketManager } from './ticket-manager.js';
 
 const { log } = console;
+
 const ticketManager = new TicketManager(10);
 
 ticketManager.on('buy', () => {
