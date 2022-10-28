@@ -1,5 +1,5 @@
 import { EventEmitter } from 'node:events';
 
-const firstEmitter = new EventEmitter();
+const firstEmitter = EventEmitter();
 
 firstEmitter.emit('My first event');
