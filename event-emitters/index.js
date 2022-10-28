@@ -19,11 +19,16 @@ ticketManager.on('buy', (email, price, timestamp) => {
 // Error handling
 ticketManager.on('error', (error) => {
   error(chalk.bgMagentaBright.underline(`Gracefully handling our error: ${error}`));
+  log(' ');
 });
 
 // Listener counts
 log(chalk.greenBright.bgGray(`We have ${ticketManager.listenerCount('buy')} listener(s) for the buy event`));
 log(chalk.cyan.bgGrey(`We have ${ticketManager.listenerCount('error')} listener(s) for the error event`));
+
+log(' ');
+log(chalk.bold('******************'));
+log(' ');
 
 // Add new event listener
 const onBuy = () => {
@@ -35,11 +40,19 @@ ticketManager.on('buy', onBuy);
 log(chalk.bgMagenta.underline(`We added a new event listener bringing our total count for the buy event to: ${ticketManager.listenerCount('buy')}`));
 ticketManager.buy('test@email', 20);
 
+log(' ');
+log(chalk.bold('******************'));
+log(' ');
+
 // Remove a single even listener
 ticketManager.off('buy', onBuy);
 
 log(chalk.blackBright.bgYellowBright.bold(`We now have: ${ticketManager.listenerCount('buy')} listener(s) for the buy event`));
 ticketManager.buy('test@email', 20);
+
+log(' ');
+log(chalk.bold('******************'));
+log(' ');
 
 // Remove all listeners
 ticketManager.removeAllListeners('buy');
